@@ -1,0 +1,30 @@
+# Ignore databases
+*.db
+
+# Ignore compiled Python files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore virtual environment files
+venv/
+env/
+
+# Ignore IDE and editor files
+.idea/
+.vscode/
+
+# Ignore log files
+*.log
+
+# Ignore cache and temporary files
+*.cache/
+*.tmp/
+*.bak/
+*.swp/
+
+flask-session/
+logs/
+
+# Add rust target directory
+target/

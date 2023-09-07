@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Can I Afford It?</title>
+</head>
+<body>
+    <h1>Can I Afford It?</h1>
+    
+    <form method="POST" action="/can-afford">
+        <label for="item_price">Item Price:</label>
+        <input type="number" step="0.01" id="price" name="price" required>
+        <br>
+
+        <label for="purchase_date">Purchase Date:</label>
+        <input type="date" id="date" name="date" required>
+        <br>
+
+        <input type="submit" value="Check Affordability">
+    </form>
+    {{diff}}
+</body>
+</html>
