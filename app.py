@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for, session
-from flask_session import Session  # type: ignore
+from flask_session import Session
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, scoped_session
@@ -75,11 +75,7 @@ def index():
     plot_data, balance = generate_plot(engine)
     categories = most_used_categories(4, db_session, Expense)
 
-    insights = [
-        f"Your balanced changed {-get_difference(n)/100:.2f}€ compared to {n} days ago."
-        for n in [1,2,4,7,10,14,20,30,31]
-    ]
-
+    insights = generate_insights()
     return render_template(
         "index.html",
         expenses=expenses,
