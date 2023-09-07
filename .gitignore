@@ -23,7 +23,7 @@ env/
 *.bak/
 *.swp/
 
-flask-session/
+flask_session/
 logs/
 
 # Add rust target directory
