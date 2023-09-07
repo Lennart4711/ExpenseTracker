@@ -6,3 +6,4 @@ The main app is in app.py but you can put a rust proxy before it for logging pur
 TODO:
 - Close plots so they don't stay in memory
 - Change the SQLAlchemy so that the connections don't stay open
+- Creation of database if it doesn't exist
